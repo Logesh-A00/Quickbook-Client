@@ -1,0 +1,135 @@
+/* MovieCard.css */
+
+.movie-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* ensures consistent height for grid */
+}
+
+.movie-card:hover {
+  transform: translateY(-6px);
+}
+
+.movie-card .poster {
+  width: 100%;
+  height: 260px; /* Reduced height */
+  object-fit: cover;
+}
+
+.movie-card h3 {
+  margin: 0.8rem 1rem 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.movie-card .genre {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin: 0 1rem 0.8rem;
+}
+
+.movie-card .rating {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem 1rem;
+  gap: 10px;
+}
+
+.movie-card button {
+  flex: 1;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.3s ease;
+}
+
+.movie-card button:hover {
+  background-color: #b00610;
+}
+
+.movie-card .rating span {
+  font-weight: 600;
+  color: #ffcc00;
+  font-size: 0.9rem;
+  line-height: 1;
+  min-width: 32px;
+  text-align: center;
+}
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #1e1e1e;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%; /* Ensure all cards grow equally */
+}
+
+.poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 15px;
+  color: #ffffff;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #f9f9f9;
+}
+
+.genre {
+  font-size: 14px;
+  color: #aaaaaa;
+  margin-bottom: 8px;
+}
+
+.rating {
+  font-size: 14px;
+  color: #ffd700;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.buy-button {
+  margin-top: auto;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start; /* Optional: align to left */
+}
+
+.buy-button:hover {
+  background-color: #b00610;
+}

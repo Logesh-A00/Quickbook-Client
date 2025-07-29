@@ -1,0 +1,407 @@
+/* ========== Global ========== */
+.home {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ========== Hero Section ========== */
+.hero {
+  position: relative;
+  background-image: url('../assets/backgroundImage.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  color: white;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 25px;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.tags {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  opacity: 0.85;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background-color: #ff3d5a;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e6324d;
+}
+
+/* ========== Now Showing Section ========== */
+.now-showing {
+  padding: 60px 80px;
+  background: #0c0c0c;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header h2 {
+  font-size: 1.5rem;
+  color: #c9faff;
+}
+
+.view-all {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.view-all:hover {
+  color: #ff3d5a;
+}
+
+.movie-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.movie-card {
+  background: #1a1a2e;
+  border-radius: 20px;
+  padding: 16px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.poster {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.movie-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.genre {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-bottom: 12px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-btn {
+  background-color: #ff3d5a;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ticket-btn:hover {
+  background-color: #e6324d;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+  color: #f97;
+}
+
+.star {
+  color: #f97;
+}
+
+.show-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.show-more-btn {
+  background-color: #ff3d5a;
+  color: white;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.show-more-btn:hover {
+  background-color: #e6324d;
+}
+
+/* ========== Disney+ Trailer Section ========== */
+.trailer-section {
+  background-color: #000;
+  color: white;
+  padding: 60px 80px;
+}
+
+.main-trailer {
+  position: relative;
+  height: 500px;
+  width: 96%;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.trailer-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.disney-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.trailer-info .marvel-label {
+  font-size: 0.85rem;
+  color: #ff8a8a;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.trailer-info h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.official-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.youtube-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff0000;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.youtube-btn:hover {
+  background: #cc0000;
+}
+
+@media (max-width: 768px) {
+  .trailer-section {
+    padding: 40px 20px;
+  }
+
+  .main-trailer {
+    height: auto;
+    border-radius: 12px;
+    position: relative;
+  }
+
+  .trailer-bg {
+    height: 220px;
+    object-fit: cover;
+    position: absolute;   /* Make video stay behind */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .overlay {
+    position: relative;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Add background to fix visibility */
+    z-index: 2;
+    color: white;
+  }
+
+  .disney-logo {
+    width: 100px;
+    margin: 0 auto 15px;
+    display: block;
+  }
+
+  .trailer-info {
+    text-align: center;
+  }
+
+  .trailer-info p,
+  .trailer-info h1 {
+    display: block !important; /* force render */
+    color: white !important;
+  }
+
+  .youtube-btn {
+    display: inline-block !important;
+    margin: 20px auto 0;
+    text-align: center;
+  }
+
+  .play-btn {
+    display: none; /* Hide on mobile if you want */
+  }
+}
+
+/* ========== Thumbnails Below Main Trailer (Optional) ========== */
+.thumbnail-trailers {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.thumb {
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 220px;
+  cursor: pointer;
+  position: relative;
+}
+
+.thumb img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+.label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.7);
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-content {
+    margin-top: 100px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .movie-grid {
+    justify-content: center;
+  }
+
+  .main-trailer {
+    height: 350px;
+  }
+
+  .trailer-info h1 {
+    font-size: 2rem;
+  }
+
+  .official-text {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,127 @@
+.movie-detail-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  padding: 40px;
+  gap: 40px;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.poster-wrapper {
+  flex-shrink: 0;
+}
+
+.movie-poster {
+  width: 260px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+}
+
+.movie-info {
+  max-width: 600px;
+}
+
+.movie-language {
+  color: #ff4081;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.movie-title {
+  font-size: 38px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+}
+
+.movie-rating {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #ff4081;
+}
+
+.rating-star {
+  font-size: 18px;
+  margin-right: 6px;
+  color: #ffcc00;
+}
+
+.rating-text {
+  font-size: 15px;
+}
+
+.movie-description {
+  color: #d0d0d0;
+  line-height: 1.6;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.meta {
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 25px;
+}
+
+.movie-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 22px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.btn.trailer {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border: 1px solid #333;
+}
+
+.btn.trailer:hover {
+  background-color: #333;
+}
+
+.btn.tickets {
+  background-color: #ff4081;
+  color: white;
+}
+
+.btn.tickets:hover {
+  background-color: #e63570;
+}
+
+.btn.favorite {
+  background-color: #1f1f1f;
+  color: white;
+  font-size: 18px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 12px;
+}
+
+.btn.favorite:hover {
+  background-color: #333;
+}

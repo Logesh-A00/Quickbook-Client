@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color:white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: white;
+  padding: 12px 20px;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.logo .q {
+  color: #ff2e63;
+}
+
+.nav-links {
+  display: flex;
+  height: 40px;
+  gap: 20px;
+  background-color: #1c1c1c;
+  border-radius: 30px;
+  padding: 8px 16px;
+  padding-top: 12px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #ff2e63;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-icon {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-btn {
+  background-color: #ff2e63;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  width: 24px;
+  height: 18px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 4px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background-color: #1c1c1c;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: none;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .navbar-right {
+    gap: 10px;
+  }
+
+  .search-icon {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

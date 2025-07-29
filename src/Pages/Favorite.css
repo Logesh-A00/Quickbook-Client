@@ -1,0 +1,167 @@
+/* Container Layout */
+.payment-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
+  color: black;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.back-arrow {
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Subtitle */
+.subtitle {
+  margin: 20px 0 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Payment Cards Grid */
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Payment Method Card */
+.payment-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 16px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+.payment-card.selected {
+  border-color: #00baf2;
+  background: #e8f8ff;
+}
+
+/* Icon Styling */
+.icon-wrapper {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-img {
+  width: 100%;
+  height: auto;
+}
+
+.react-icon {
+  font-size: 28px;
+  color: #00baf2;
+}
+
+/* Radio Button */
+.payment-card input[type="radio"] {
+  accent-color: #00baf2;
+  transform: scale(1.2);
+}
+
+/* Pay Now Button */
+.pay-now-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #00baf2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pay-now-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content Box */
+.modal-content {
+  background: #fff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Modal Inputs */
+.modal-content input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  display: block;
+  font-size: 15px;
+}
+
+/* Modal Buttons */
+.modal-buttons {
+  margin-top: 15px;
+}
+
+.modal-buttons button {
+  margin: 0 5px;
+  padding: 10px 18px;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #00baf2;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.modal-buttons button:hover {
+  background-color: #0090c8;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
